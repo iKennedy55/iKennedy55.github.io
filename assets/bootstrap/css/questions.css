@@ -1,0 +1,102 @@
+html{
+
+    scroll-behavior: smooth !important;
+}
+
+.accordion-item{
+    background-color: white;
+    border-radius: .4rem;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    
+    }
+    
+    .accordion-link{
+        font-size: 1.6rem;
+        text-decoration: none;
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 1rem 0;
+        width: 100%;
+    }
+    
+    .accordion-link i{
+        padding: .5rem;
+    }
+    
+    .accordion-link .ion-md-remove{
+        display: none ; 
+    }
+    
+    .answer{
+        overflow: hidden;
+        max-height: 0;
+        position:relative;
+        transition: 650ms;
+        
+    }
+    
+    .answer::before{
+        content:"";
+        background-color: #7E0EE6;
+        position:absolute;
+        width: .6rem;
+        height: 100%;
+        top: 50%;
+        left: 0;
+        transform: translateY(-60%);
+    }
+    
+    .answer p{
+        font-size: 1.4rem;
+        color: rgb(0, 0, 0) ;
+        padding: 2rem;
+    }
+    
+    .accordion-item:target .answer{
+    
+        max-height: 60rem;
+    }
+    
+    
+    .accordion-item:target .accordion-link .ion-md-add{
+    
+        display: none;
+    }
+    
+    
+    .accordion-item:target .accordion-link .ion-md-remove{
+    
+        display: block;
+    }
+    
+    ul.social-buttons li a {
+        font-size: 40px;
+        line-height: 80px;
+        display: block;
+        width: 80px;
+        height: 80px;
+        transition: all .3s;
+        color: #fff;
+        border-radius: 100%;
+        outline: none;
+        background-color: #7E0EE6;
+      }
+      
+      ul.social-buttons2 li a {
+        margin-top: 60px;
+        margin-bottom: 60px;
+        font-size: 30px;
+        line-height: 60px;
+        display: block;
+        width: 60px;
+        height: 60px;
+        transition: all .3s;
+        color: #7E0EE6;
+        border-radius: 100%;
+        outline: none;
+        background-color: #f3f3f3;
+      }
+      
