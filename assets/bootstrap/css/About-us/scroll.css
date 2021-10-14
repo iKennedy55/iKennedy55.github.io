@@ -1,0 +1,86 @@
+/* One Click Scrool Top Button*/
+.scroll-top {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background: #723FE4;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-size: 14px;
+    color: #fff !important;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all .3s ease-out 0s;
+    transition: all .3s ease-out 0s;
+    border-radius: 5px;
+  }
+  
+  .scroll-top:hover {
+    -webkit-box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+    box-shadow: 0 1rem 3rem rgba(35, 38, 45, 0.15) !important;
+    -webkit-transform: translate3d(0, -5px, 0);
+    transform: translate3d(0, -5px, 0);
+    background-color: #723FE4;
+  }
+
+
+
+
+
+
+  .timeline-steps {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .timeline-steps .timeline-step {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: 1rem;
+  }
+  
+  @media (min-width:768px) {
+    .timeline-steps .timeline-step:not(:last-child):after {
+      content: "";
+      display: block;
+      border-top: .25rem solid #7E0EE6;
+      width: 7rem;
+      position: absolute;
+      left: 7.5rem;
+      top: 5rem;
+    }
+  }
+  
+  .timeline-steps .timeline-content {
+    width: 10rem;
+    text-align: center;
+  }
+  
+  .timeline-steps .timeline-content .inner-circle {
+    border-radius: 2rem;
+    height: 4rem;
+    width: 4rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #7E0EE6;
+    min-width: 4rem;
+  }
+  
+ 
+  
+  
+  
